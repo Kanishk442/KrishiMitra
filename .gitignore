@@ -24,8 +24,7 @@ test*
 *.doc
 
 # Database
-*.sql
-*.db
+
 
 # System files
 .DS_Store
@@ -36,3 +35,4 @@ Thumbs.db
 /working js.js
 /login try.py
 /districts fix.py
+
