@@ -16,8 +16,8 @@ def get_db_connection():
         return mysql.connector.connect(
             host="localhost",
             user="root",
-            password="ktom2005",
-            database="farmmanagement_dpsk",
+            password="*****",
+            database="database",
             connect_timeout=5
         )
     except mysql.connector.Error as err:
