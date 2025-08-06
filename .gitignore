@@ -1,0 +1,38 @@
+﻿# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment
+.env
+venv/
+
+# Temporary files
+*.tmp
+*.temp
+tempCodeRunnerFile.py
+test*
+
+# Media files
+*.mp4
+*.jpg
+*.png
+
+# Documents
+*.docx
+*.doc
+
+# Database
+*.sql
+*.db
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Application specific
+/flask dpsk KM
+/working js.js
+/login try.py
+/districts fix.py

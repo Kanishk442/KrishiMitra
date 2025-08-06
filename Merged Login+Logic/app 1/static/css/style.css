@@ -1,0 +1,651 @@
+*{
+    text-decoration: none;
+    font-size: none;
+    font: none;
+    color: none;
+}
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #f4f4f4; 
+}
+.navbar { 
+    background: #2E7D32; 
+    color: white; 
+    padding: 15px; 
+    text-align: center; }
+.navbar a { 
+    color: white; 
+    margin: 0 15px; 
+    text-decoration: none; 
+    font-weight: bold; }
+.hero { 
+    background: url('/static/images/farm-banner.jpg') center/cover no-repeat; 
+    height: 400px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    color: rgb(247, 250, 248); 
+    text-align: center; }
+.hero h1 { 
+    font-size: 36px; }
+.hero p { 
+    font-size: 18px; 
+    max-width: 600px; }
+.hero button { 
+    background: #FFD700; 
+    border: none; 
+    padding: 10px 20px; 
+    margin-top: 10px; 
+    cursor: pointer; 
+    font-size: 16px; }
+.features { 
+    display: flex; 
+    justify-content: space-around; 
+    padding: 40px; 
+    background: white; }
+.feature-box {
+    color: #1e201e;
+    background: rgb(235, 255, 241);
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.feature-box h3 { 
+    color: #2E7D32; }
+.updates { 
+    background: #FFF8E1; 
+    padding: 30px; 
+    text-align: center; }
+.contact { 
+    background: #2E7D32; 
+    color: white; 
+    padding: 30px; 
+    text-align: center; }
+.footer { 
+    background: #1B5E20; 
+    color: white; 
+    text-align: center; 
+    padding: 10px; }
+.navbar a:hover, .navbar a.active {
+    background-color: #4a8c2f;
+    border-radius: 5px;
+}
+    
+/* Login Page Layout */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    gap: 40px;
+}
+
+/* Form Box */
+.form-box {
+    background-color: white;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+    
+.form-box h2 {
+    color: #2c5e1a;
+}
+    
+label {
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+}
+    
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+    
+/* Buttons */
+button {
+    background-color: #4a8c2f;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #36751e;
+}
+    
+/* Footer */
+.footer {
+    background-color: #2c5e1a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    }
+
+.feature-box:hover{
+    background-color: #bcf1c1;
+    transform: scale(1.05);
+}
+#model { 
+    display: flex; 
+    justify-content: space-around; 
+    padding: 40px; 
+    background: white; }
+#model-box {
+    color: #1e201e;
+    background: #cce7ff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+#model-box:hover{
+    transform: scale(1.05);
+    background-color:#99caf4 ;
+}
+:root {
+    --primary: #2e7d32;
+    --primary-light: #4caf50;
+    --secondary: #0288d1;
+    --danger: #d32f2f;
+    --warning: #ffa000;
+    --light: #f5f5f5;
+    --dark: #212121;
+    --gray: #757575;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.app-header {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.header-content p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.header-image img {
+    height: 120px;
+    width: auto;
+}
+
+.mode-selector {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.mode-btn {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--white);
+    color: var(--dark);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mode-btn i {
+    font-size: 1.2rem;
+}
+
+.mode-btn.active {
+    background-color: var(--secondary);
+    color: var(--white);
+}
+
+.mode-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.form-container {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+}
+
+.form-card h2 {
+    color: var(--primary);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--dark);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-group select,
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.2);
+}
+
+.submit-btn {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.submit-btn:hover {
+    background-color: var(--primary-light);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(46, 125, 50, 0.3);
+}
+
+.output-container {
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+}
+
+.output-card {
+    padding: 30px;
+}
+
+.output-card h2 {
+    color: var(--primary);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.output-content {
+    margin-top: 20px;
+}
+
+.irrigation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.irrigation-table th {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 15px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.irrigation-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.irrigate-yes {
+    background-color: rgba(76, 175, 80, 0.1);
+    border-left: 4px solid var(--primary);
+}
+
+.irrigate-no {
+    background-color: rgba(211, 47, 47, 0.1);
+    border-left: 4px solid var(--danger);
+}
+
+.irrigate-partial {
+    background-color: rgba(255, 160, 0, 0.1);
+    border-left: 4px solid var(--warning);
+}
+
+.weather-alert {
+    background-color: #fff3cd;
+    padding: 15px;
+    border-left: 4px solid #ffc107;
+    margin: 15px 0;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.print-btn {
+    background-color: var(--secondary);
+    color: var(--white);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.print-btn:hover {
+    background-color: #0277bd;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(2, 136, 209, 0.3);
+}
+
+.app-footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .app-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 20px;
+    }
+    
+    .header-image {
+        margin-top: 20px;
+    }
+    
+    .header-image img {
+        height: 100px;
+    }
+    
+    .mode-selector {
+        flex-direction: column;
+    }
+    
+    .form-container, .output-container {
+        padding: 20px;
+    }
+    
+    .irrigation-table {
+        font-size: 0.9rem;
+    }
+    
+    .irrigation-table th, 
+    .irrigation-table td {
+        padding: 10px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content h1 {
+        font-size: 2rem;
+    }
+    
+    .header-content p {
+        font-size: 1rem;
+    }
+    
+    .form-card h2, .output-card h2 {
+        font-size: 1.3rem;
+    }
+}
+/* Add to your style.css */
+.loading-spinner {
+    color: var(--primary);
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+select[disabled] {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+}
+/* Yearly Plan Styling */
+.yearly-header {
+    background: #2e7d32;
+    color: white;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+}
+
+.season-tabs {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tab-btn {
+    background: #4caf50;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tab-btn:hover {
+    background: #388e3c;
+}
+
+.crop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 15px;
+}
+
+.crop-card {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.crop-card h4 {
+    color: #2e7d32;
+    margin-top: 0;
+}
+
+.crop-card button {
+    background: #8bc34a;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+/* Yearly Plan Styles */
+.yearly-plan-container {
+    margin-top: 20px;
+}
+
+.season-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tab-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.tab-btn.kharif {
+    background-color: #5d8c45;
+    color: white;
+}
+
+.tab-btn.rabi {
+    background-color: #45708c;
+    color: white;
+}
+
+.tab-btn.zaid {
+    background-color: #8c6d45;
+    color: white;
+}
+
+.tab-btn.active {
+    transform: scale(1.05);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.crop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.crop-card {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.crop-card.kharif {
+    border-top: 4px solid #5d8c45;
+}
+
+.crop-card.rabi {
+    border-top: 4px solid #45708c;
+}
+
+.crop-card.zaid {
+    border-top: 4px solid #8c6d45;
+}
+
+.crop-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.yield-badge {
+    background: #f1c40f;
+    color: #34495e;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.disease-alert {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+.treatment {
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.view-plan-btn {
+    width: 100%;
+    padding: 8px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}

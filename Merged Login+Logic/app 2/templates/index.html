@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KrishiMitra - Smart Irrigation Advisor</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="app-header">
+            <div class="header-content">
+                <h1><i class="fas fa-tint"></i> KrishiMitra</h1>
+                <p>Smart Irrigation Scheduling for Farmers</p>
+            </div>
+            <div class="header-image">
+                <img src="../static/images/farmer.png" alt="Farmer illustration">
+            </div>
+        </header>
+
+        <div class="mode-selector">
+            <button id="manualMode" class="mode-btn">
+                <i class="fas fa-database"></i> Manual Advisory
+            </button>
+            <button id="weatherMode" class="mode-btn active">
+                <i class="fas fa-cloud-sun"></i> Real-Time Weather
+            </button>
+            <button id="yearlyMode" class="mode-btn">
+                <i class="fas fa-calendar-alt"></i> Yearly Plan
+            </button>
+        </div>
+
+        <!-- Manual Advisory Form -->
+        <div id="manualForm" class="form-container" style="display: none;">
+            <div class="form-card">
+                <h2><i class="fas fa-info-circle"></i> Advisory Parameters</h2>
+                <div class="form-group">
+                    <label for="manualLocation"><i class="fas fa-map-marker-alt"></i> Select Location:</label>
+                    <select id="manualLocation">
+                        <option value="">-- Select District --</option>
+                        <option value="jaipur">Jaipur, Rajasthan</option>
+                        <option value="pune">Pune, Maharashtra</option>
+                        <option value="hyderabad">Hyderabad, Telangana</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="manualCrop"><i class="fas fa-leaf"></i> Select Crop:</label>
+                    <select id="manualCrop" disabled>
+                        <option value="">Select district first</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="soilType"><i class="fas fa-seedling"></i> Soil Type:</label>
+                    <select id="soilType">
+                        <option value="clay">Clay</option>
+                        <option value="loamy">Loamy</option>
+                        <option value="sandy">Sandy</option>
+                    </select>
+                </div>
+                <button id="generateManualPlan" class="submit-btn">
+                    <i class="fas fa-calculator"></i> Generate Advisory Plan
+                </button>
+            </div>
+        </div>
+
+        <!-- Weather Advisory Form -->
+        <div id="weatherForm" class="form-container">
+            <div class="form-card">
+                <h2><i class="fas fa-cloud-sun-rain"></i> Weather Parameters</h2>
+                <div class="form-group">
+                    <label for="weatherLocation"><i class="fas fa-map-marker-alt"></i> Enter Location:</label>
+                    <input type="text" id="weatherLocation" placeholder="e.g., Jaipur">
+                </div>
+                <div class="form-group">
+                    <label for="weatherCrop"><i class="fas fa-leaf"></i> Select Crop:</label>
+                    <select id="weatherCrop" disabled>
+                        <option value="">Select district first</option>
+                    </select>
+                </div>
+                <button id="generateWeatherPlan" class="submit-btn">
+                    <i class="fas fa-cloud-sun"></i> Get Weekly Irrigation Plan
+                </button>
+            </div>
+        </div>
+
+        <!-- Yearly Plan Form -->
+        <div id="yearlyForm" class="form-container" style="display: none;">
+            <div class="form-card">
+                <h2><i class="fas fa-calendar-alt"></i> Yearly Crop Plan</h2>
+                <div class="form-group">
+                    <label for="yearlyState"><i class="fas fa-map-marker-alt"></i> Select State:</label>
+                    <select id="yearlyState">
+                        <option value="">-- Loading States --</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="yearlyDistrict"><i class="fas fa-map-marker-alt"></i> Select District:</label>
+                    <select id="yearlyDistrict" disabled>
+                        <option value="">-- Select State First --</option>
+                    </select>
+                </div>
+                <button id="generateYearlyPlan" class="submit-btn" disabled>
+                    <i class="fas fa-seedling"></i> Generate Yearly Plan
+                </button>
+            </div>
+        </div>
+
+        <!-- Output Container -->
+        <div id="output" class="output-container" style="display: none;">
+            <div class="output-card">
+                <h2 id="outputTitle"><i class="fas fa-clipboard-list"></i> Advisory Plan</h2>
+                <div id="outputContent" class="output-content"></div>
+                <button id="printPlan" class="print-btn">
+                    <i class="fas fa-print"></i> Print Plan
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="detailedPlan" class="detailed-plan-popup" style="display: none;">
+        <div class="plan-content">
+            <span class="close-btn" onclick="closeDetailedPlan()">&times;</span>
+            <div id="detailedPlanContent"></div>
+        </div>
+    </div>
+    
+
+    <footer class="app-footer">
+        <p>© 2023 KrishiMitra | Developed for Farmers</p>
+    </footer>
+
+    <script src="/static/js/script.js"></script>
+    <!-- Detailed Plan Popup -->
+<div id="detailedPlan" class="detailed-plan-popup" style="display: none;">
+    <div class="plan-content">
+        <span class="close-btn" onclick="closeDetailedPlan()">&times;</span>
+        <div id="detailedPlanContent">
+            <!-- Filled dynamically from JS -->
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
