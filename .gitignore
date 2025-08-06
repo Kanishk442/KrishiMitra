@@ -36,3 +36,20 @@ Thumbs.db
 /login try.py
 /districts fix.py
 
+
+# Development/experimental files
+*_try.py
+*fix.py
+working_*.js
+weekly_*.py
+flask_*
+
+# Development/experimental files
+*_try.py
+*fix.py
+working_*.js
+weekly_*.py
+flask_*
+
+# Database files (uncomment if you chose Option B)
+# *.sql
