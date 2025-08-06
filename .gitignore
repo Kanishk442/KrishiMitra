@@ -51,5 +51,4 @@ working_*.js
 weekly_*.py
 flask_*
 
-# Database files (uncomment if you chose Option B)
-# *.sql
+
